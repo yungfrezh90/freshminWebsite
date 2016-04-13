@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Wed, 14 Oct 2015 00:20:23 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshmin.com [Blogs]</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+		.navBlue
+		{
+			background-color: black;
+		}
+		
+	   .jumbotron
+	   {
+			position: relative;
+			margin-top: -19px;
+			margin-bottom: -40px;
+			background-color: white;
+	   }
+	
+		#blogsContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: lightgrey;
+			border: 2px solid lightgrey;
+			border-radius: 10px;
+		}
+		
+		.page-header
+		{
+			position: relative;
+			text-align: center;
+		}
+		
+		#blogLink
+		{
+			color: red;
+		}
+		
+		.content
+		{
+			position: relative;
+			width: 100%;
+			height: 270px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		
+		#blogRow
+		{
+			position: relative;
+			width: 100%;
+		}
+		
+		.blogContainer
+		{
+			position: relative;
+			width: 100%;
+		}
+		
+		.video
+		{
+			position: relative;
+			width: 98%;
+			margin-top: 10px;
+			height: 270px;
+			margin-bottom: 20px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 5px 5px 5px black;
+			cursor: pointer;
+			border: 2px solid black;
+			border-radius: 10px;
+		}
+		
+		.glyphicon-fire, .glyphicon-heart
+		{
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+			left: 20%;
+			color: red;
+			cursor: pointer;
+		}
+		.blogTitle
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+	   #searchLg
+	   {
+			position: relative;
+			top: 15px;
+	   }
+	   
+	   #searchSm
+	   {
+			position: relative;
+			margin-top: 30px;
+			width: 50%;
+	   }
+		
+		#brand1
+	   {
+			position: relative;
+			width: 110px;
+			height: 100px;
+			margin-left: 100px;
+			margin-right: 50px;
+	   }
+	   
+	   #navBlack
+	   {
+			position: relative;
+			background-color: black;
+	   }
+	   
+		#navbar-drop
+	   {
+			position: relative;
+			margin-top: 15px;
+	   }
+	   
+	   .links
+	   {
+			position: relative;
+			text-indent: 20px;
+	   }
+	   
+	   #search
+	   {
+			position: relative;
+			margin-top: 25px;
+	   }
+	   
+	   .title
+	   {
+			text-decoration: none;
+	   }
+	   
+	   #contentContainer
+	   {
+			position: relative;
+			margin-bottom: 80px;
+			margin-top: -20px;
+	   }
+	   
+		.blogImage
+		{
+			position: relative;
+			width: 100%;
+			height: 240px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			box-shadow: 3px 3px 3px black;
+			cursor: pointer;
+			border: 2px solid lightgrey;
+			border-radius: 10px;
+		}
+		
+		#searchButton
+		{
+			cursor: pointer;
+		}
+		
+		#searchButton2
+		{
+			cursor: pointer;
+		}
+		
+		.blogTitle
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		.blogContainer
+		{
+			position: relative;
+			width: 100%;
+		}
+		
+		#blogRow
+		{
+			position: relative;
+			width: 100%;
+		}
+	
+		footer
+		{
+			position: relative;
+			background-color: black;
+			width: 100%;
+			display: none;
+		}
+
+		#adminCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+
+		#adminCol
+		{
+			position: relative;
+			left: 5%;
+			text-decoration: none;
+		}
+
+		#userCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+
+		.admin p
+		{
+			color: white;
+			text-indent: 10px;
+			text-decoration: none;
+		}
+
+		.user p
+		{
+			color: white;
+			text-indent: 10px;
+		}
+
+		#copyrightContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 280px;
+		}
+
+		.copyright
+		{
+			position: relative;
+			height: 20px;
+			width: 15px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+		}
+
+		.copyrightTitle
+		{
+			position: relative;
+			color: white;
+		}
+		
+		#navText
+		{
+			position: relative;
+			color: white;
+			left: 05%;
+			text-shadow: 2px 2px 2px black;
+			cursor: pointer;
+		}
+
+		.copyrightTitle,.copyright
+		{
+			position: relative;
+			display: inline-block;
+		}
+
+		#userHeader, #adminHeader
+		{
+			position: relative;
+			color: dodgerblue;
+			text-shadow: 2px 2px 2px lightgrey;
+		}
+
+		#adminCol
+		{
+			position: relative;
+			display: none;
+		}
+
+		#userCol
+		{
+			position: relative;
+		}
+
+		#userCol h3, #userCol a
+		{
+			text-align: center;
+		}
+
+		.links a h4
+		{
+			position: relative;
+			color: white;
+			text-decoration: none;
+		}
+		
+		#loader
+		{
+			text-align: center;
+			color: red;
+			margin-top: -20px;
+		}
+		
+		.glyphicon-heart
+		{
+			color: red;
+			pointer: cursor;
+		}
+		
+		#contentContainer
+		{
+			padding-top: 50px;
+			margin-top: 150px;
+		}
+		
+		.contentContainer section section section a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+		
+		#navText
+		{
+			position: relative;
+			color: white;
+		}
+		
+		#brand2
+		{
+			position: relative;
+			width: 110px;
+			height: 100px;
+		}
+		
+		.pagination
+		{
+			position: relative;
+			display: block;
+			margin-left: 15px;
+		}
+		
+		@media only screen and (max-device-width: 480px) 
+		{
+		
+			#contentContainer
+			{
+				margin-top: 80px;
+				position: relative;
+				background-color: white;
+			}	
+			
+			footer
+			{
+				position: relative;
+				background-color: black;
+				width: 100%;
+				top: 0px;
+			}
+			
+			.blogImage
+			{
+				position: relative;
+				width: 100%;
+				height: 240px;
+				display: block;
+				left: 10%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				box-shadow: 3px 3px 3px black;
+				cursor: pointer;
+				border:none;
+			}
+			
+			.video
+			{
+				position: relative;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				margin-top: 15px;
+				left: 10%;
+				border: none;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function()
+		{	
+			$('.admin p, .user p').hover(function()
+			{
+				$(this).css("color", "blue");
+			},
+			
+			function()
+			{
+				$(this).css("color", "white");
+			});
+			
+			if(sessionStorage.auth != undefined)
+			{
+				$('#userCol').removeClass("col-md-12").removeClass('col-sm-12').removeClass('col-xs-12').addClass("col-sm-4").addClass("col-xs-4").addClass("col-md-4").addClass("col-sm-offset-1").addClass("col-xs-offset-1").addClass("col-md-offset-1s");
+				$('#adminCol').show();
+			}
+			
+			if(sessionStorage.username != undefined)
+			{
+				$('#logIn').remove();
+				
+				$('#signUp').before("<button class = 'btn btn-warning btn-sm' id = 'logOut'> Log Out </button>");
+				
+				$('#logOut').css({ "position": "relative", "right": "15px", "top": "20px"});
+			}
+			
+			$('#logOut').click(function()
+			{
+				sessionStorage.removeItem('username');
+				
+				alert("Logged out");
+				
+				if(sessionStorage.auth)
+				{
+					sessionStorage.removeItem('auth');
+				}
+				
+				$('#logOut').remove();
+				
+				$('#signUp').before("<button type = 'button' class = 'btn btn-primary btn-sm' id = 'logIn'> Log In </button>");
+				
+				$('#logIn').css({ "position": "relative", "right": "15px", "top": "20px"});
+				
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/");
+			});
+			
+			$('#logIn').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/logIn");
+			});
+			
+			$('#signUp').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/signUp");
+			});
+		
+			var blogData;
+			
+			var validQuery;
+			
+			var numVideos = 0;
+			
+			var numPages = 0;
+			
+			var search = location.search;
+			
+			var whichPage;
+
+			var skipPosition = search.search("skip");
+			
+			var videoData;
+			
+			$('#navText').hover(function()
+			{
+				$(this).css("text-shadow", "3px 3px 3px yellow");
+			},
+			
+			function()
+			{
+				$(this).css("text-shadow", "none");
+			});
+		
+			$('.links a h4').hover(function()
+			{
+				$(this).css("color", "blue");
+			},
+				
+			function()
+			{
+				$(this).css("color", "white");
+			});
+			
+			function sortData(by)
+			{
+				$('#insertionPoint').empty();
+			
+				if(by == "Likes")
+				{	
+					var request = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/queryLikes?collection=Blogs'});
+					
+					request.success(function(newData)
+					{
+						//alert(newData);
+						$('.jumbotron h2').text("Blogs").css({color: 'black', 'text-shadow': '2px 2px 2px white'});
+						renderContent(JSON.parse(newData));
+						$('footer').show();
+					});
+					
+					request.fail(function(x)
+					{
+						alert("Error");
+					});
+				}
+				
+				else
+				{
+					$('.jumbotron h2').text("Blogs").css({color: 'black', 'text-shadow': '2px 2px 2px white'});
+					renderContent(blogData);
+					$('footer').show();
+				}
+			}
+			
+			function renderContent(data)
+			{
+				for(var count = 0; count < data.length; count++)
+				{
+					var blogHTML =  	'<section class = "col-md-6 col-sm-12 col-xs-12 contentContainer">' +
+				
+												'<section class = "container-fluid blog content" id = "content' + count + '">' +
+												
+													'<section class = "row" style = "width: 100%;">' +
+													
+														'<section class = "col-md-8 col-sm-10 col-xs-10" style = "position: relative; width: 100%;">' +
+															
+															'<a href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Blog&title=' + data[count].Title + '"><h4 class = "blogTitle title"><strong>' + data[count].Title + '</strong> </h4> </a>'+
+															
+														'</section>' +
+														
+														'<section class = "col-sm-2 col-md-2 col-xs-2" style = "position: relative; width: 100%" id = "beforeHeart">' +
+														
+															'<span class = "glyphicon glyphicon-heart"> <span class = "likes">' + data[count].Likes.number + '</span></span>' +
+															
+														'</section>' +
+													
+														'<section class = "col-md-12 col-sm-12 col-xs-12" style = "width: 100%;">'  +
+															
+															'<a href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Blog&title=' + data[count].Title + '"> <img class = "blogImage" src = "http://freshminlifestyle-westcoast.rhcloud.com/getBlogImage?file=' + data[count].CoverImg + '&title=' + data[count].Title + '" class = "img-responsive"> </a>' +
+															
+														'</section>' +
+												
+													'</section>' +
+													
+												'</section>' +
+											
+											'</section>';				
+
+					$('#insertionPoint').append(blogHTML);
+					
+					if(data[count].Likes.number == 0)
+					{
+						$('#content' + count).find(".glyphicon").children().eq(0).hide();
+					}
+					
+				}
+				
+			}
+			
+			function renderVideos(data)
+			{			
+				for(var count = 0; count < data.length; count++)
+				{				
+					var videoHTML =  '<section class = "col-md-6 col-sm-12 col-xs-12 contentContainer">' +
+		
+										'<section class = "container-fluid content" id = "video' + count + '">' +
+										
+											'<section class = "row" style = "width: 100%;">' +
+											
+												'<section class = "col-md-8 col-sm-10 col-xs-10" style = "position: relative; width: 100%;">' +
+													
+													'<a class = "noDecoration" href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Video&title=' + data[count].Title + '"><h4 class = "blogTitle title"><strong>' + data[count].Title + '</strong> </h4> </a>' +
+												
+												'</section>' +
+												
+												'<section class = "col-md-1 col-sm-1 col-xs-1" style = "position: relative; width: 100%;">' +
+													
+													'<span class = "glyphicon glyphicon-fire"> <span class = "likes">' + data[count].Likes.number + ' </span></span>' +
+													
+												'</section>' +
+												
+												'<section class = "col-md-12 col-xs-12 col-sm-12 videoCol" style = "position: relative; width: 100%;">' +
+												
+													data[count].Link +
+												
+												'</section>' +
+										
+											'</section>' +
+											
+										'</section>' +
+									
+									'</section>';
+								
+					$('#insertionPoint').append(videoHTML);
+					
+					if(data[count].Likes.number == 0)
+					{
+						$('#video' + count).find(".glyphicon").children().eq(0).hide();
+					}
+				}
+				
+				$('.videoCol iframe').addClass("video");
+				
+				//alert($('.video').attribute("autoplay"));
+			}
+
+			function renderBlogs(data)
+			{			
+				for(var count = 0; count < data.length; count++)
+				{					
+					var blogHTML =  '<section class = "col-md-6 col-sm-12 col-xs-12 contentContainer">' +
+		
+										'<section class = "container-fluid blog content" id = "blog' + count + '">' +
+										
+											'<section class = "row" style = "width: 100%;">' +
+											
+												'<section class = "col-md-8 col-sm-10 col-xs-10" style = "position: relative; width: 100%;">' +
+													
+													'<a href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Blog&title=' + data[count].Title + '"><h4 class = "blogTitle title"><strong>' + data[count].Title + '</strong> </h4> </a>'+
+													
+												'</section>' +
+												
+												'<section class = "col-sm-2 col-md-2 col-xs-2" style = "position: relative; width: 100%" id = "beforeHeart">' +
+												
+													'<span class = "glyphicon glyphicon-heart"> <span class = "likes">' + data[count].Likes.number + '</span></span>' +
+													
+												'</section>' +
+											
+												'<section class = "col-md-12 col-sm-12 col-xs-12" style = "width: 100%;">'  +
+													
+													'<a href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Blog&title=' + data[count].Title + '"> <img class = "blogImage" src = "http://freshminlifestyle-westcoast.rhcloud.com/getBlogImage?file=' + data[count].CoverImg + '&title=' + data[count].Title + '" class = "img-responsive"></a>' +
+													
+												'</section>' +
+										
+											'</section>' +
+											
+										'</section>' +
+									
+									'</section>';
+								
+					$('#insertionPoint').append(blogHTML);
+					
+					if(data[count].Likes.number == 0)
+					{
+						$('#blog' + count).find(".glyphicon").children().eq(0).hide();
+					}
+				}
+			}
+			
+			function renderXclusives(data)
+			{			
+				for(var count = 0; count < data.length; count++)
+				{				
+					var interviewHTML =  '<section class = "col-md-6 col-sm-12 col-xs-12 contentContainer">' +
+		
+										'<section class = "container-fluid content" id = "xclusive' + count + '">' +
+										
+											'<section class = "row" style = "width: 100%;">' +
+											
+												'<section class = "col-md-8 col-sm-10 col-xs-10" style = "position: relative; width: 100%;">' +
+													
+													'<a class = "noDecoration" href = "http://freshminlifestyle-westcoast.rhcloud.com/content?media=Xclusive&title=' + data[count].Title + '"><h4 class = "blogTitle title"><strong>' + data[count].Title + '</strong> </h4> </a>' +
+												
+												'</section>' +
+												
+												'<section class = "col-md-2 col-sm-2 col-xs-2" style = "position: relative; width: 100%;">' +
+													
+													'<span class = "glyphicon glyphicon-heart"> <span class = "likes">' + data[count].Likes.number + '</span></span>' +
+													
+												'</section>' +
+												
+												'<section class = "col-md-12 col-xs-12 col-sm-12 videoCol" style = "position: relative; width: 100%;">' +
+												
+													data[count].VideoLink +
+												
+												'</section>' +
+										
+											'</section>' +
+											
+										'</section>' +
+									
+									'</section>';
+								
+					$('#insertionPoint').append(interviewHTML);
+					
+					if(data[count].Likes.number == 0)
+					{
+						$('#xclusive' + count).find(".glyphicon").children().eq(0).hide();
+					}
+				}
+				
+				$('.videoCol iframe').addClass("video");
+			}
+			
+			function renderPagination(data)
+			{
+				//alert(numPages);
+			
+				if(data.length > 10)
+				{
+					$('#insertionPoint').parent().append("<ul class='pagination'> <li class = 'pageChange' id = 'back'> <a aria-label = 'Previous'> <span aria-hidden = 'true'>&laquo;<span> </a> </li></ul>");
+					for(var count = 0; count < numPages; count++)
+					{
+						//alert("chea");
+						$('.pagination').append("<li class = 'pageChange'> <a>" + (count + 1) + "</a> </li>");
+					}
+					
+					$('.pagination').append("<li class = 'pageChange' id = 'forward'> <a aria-label = 'Next'> <span aria-hidden = 'true'>&raquo;<span> </a> </li>");
+				}
+				
+				else
+				{
+					$('#insertionPoint').parent().append("<ul class='pagination'> </ul>");
+					$('.pagination').append("<li class = 'pageChange'> <a>1</a> </li>");
+					$('.pageChange').addClass("active");
+				}
+			}
+		
+			var videoRequest = null;
+			
+			if(skipPosition != -1)
+			{
+				skipPosition = skipPosition + 5;
+				
+				if(search[skipPosition] == undefined || search[skipPosition-1] == undefined)
+				{
+					videoRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/getBlogs'});
+					whichPage = 1;
+				}
+				
+				else
+				{
+					var skipHolder = new String();
+					
+					for(var count = skipPosition; count < search.length; count++)
+					{
+						if(search[count] != '0' && search[count] != '1' && search[count] != '2' && search[count] != '3' && search[count] != '4' && search[count] != '5' && search[count] != '6' && search[count] != '7' && search[count] != '8' && search[count] != '9')
+						{
+							skipHolder = null;
+							break;
+						}
+					
+						skipHolder += search[count];
+					}
+					
+					if(skipHolder != null)
+					{
+						whichPage = Number(skipHolder);
+						videoRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/getBlogs?skip=' + whichPage});;
+					}
+					
+					else
+					{
+						whichPage = 1;
+						videoRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/getBlogs'});
+					}
+				
+				}
+			}
+				
+			else
+				videoRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/getBlogs'});
+		
+			videoRequest.success(function(data)
+			{			
+				//alert(JSON.stringify(data));
+				data = JSON.stringify(data);
+				data = JSON.parse(data);
+				blogData = data;
+				$('.jumbotron h2').text("Blogs").css({"color": 'black', "text-shadow": '2px 2px 2px white'});
+				
+				renderContent(data);
+				
+				var request  = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/collectionSize?collection=Blogs"});
+				
+				//alert(search);
+				
+				//alert(skipPosition)
+				
+				request.success(function(data)
+				{
+					//alert(data);
+				
+					data = JSON.parse(data);
+					
+					//alert(data.length);
+					
+					numVideos = data.length;
+					
+					if(numVideos % 10 != 0)
+					{
+						numPages = Math.floor(numVideos/10) + 1;	
+					}
+					
+					else
+					{
+						numPages = numVideos/10;
+					}
+					
+					//alert(numPages);
+					
+					renderPagination(data);
+					
+					if(skipPosition != -1)
+					{			
+						if(search[skipPosition] == undefined || search[skipPosition-1] == undefined)
+						{
+							videoRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/getVideos'});
+							whichPage = 1;
+							$('.pageChange').eq(1).addClass("active");
+						}
+						
+						else
+						{
+							var skipHolder = new String();
+						
+							for(var count = skipPosition; count < search.length; count++)
+							{
+								if(search[count] != '0' && search[count] != '1' && search[count] != '2' && search[count] != '3' && search[count] != '4' && search[count] != '5' && search[count] != '6' && search[count] != '7' && search[count] != '8' && search[count] != '9')
+								{
+									skipHolder = null;
+									break;
+								}
+							
+								skipHolder += search[count];
+							}
+							
+							if(skipHolder != null)
+							{
+								whichPage = Number(skipHolder);
+								$('.pageChange').eq(whichPage).addClass("active");
+							}
+							
+							else
+							{
+								whichPage = 1;
+								$('.pageChange').eq(whichPage).addClass("active");
+							}
+						}
+					}
+					
+					else
+					{
+						$('.pageChange').eq(1).addClass("active");
+					}
+					
+					$(".pageChange").click(function(e)
+					{
+						e.preventDefault();
+						
+						var thisPage = $(this);
+						
+						if(thisPage.hasClass("active"))
+						{
+							return 0;
+						}
+						
+						if($(this).attr("id") == "back")
+						{	
+							if($('.pageChange.active').text() != 1)
+							{
+								var previous = Number($('.pageChange.active').text()) - 1;
+								
+								var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/getBlogs?skip=" + previous});
+								
+								request.success(function(data)
+								{
+									//alert(data);
+									
+									$('.pageChange.active').prev().addClass("active");
+									
+									$('.pageChange.active').eq(1).removeClass("active");
+									
+									$(window).scrollTop(0);
+									
+									$('#insertionPoint').empty();
+									
+									renderContent(data);
+								});
+								
+								request.error(function(data)
+								{
+									alert(data.responseText);
+								});
+							}
+						}
+						
+						else if($(this).attr("id") == "forward")
+						{
+							if($('.pageChange.active').text() != numPages)
+							{
+								var next = Number($('.pageChange.active').text()) + 1;
+								
+								//alert(next);
+							
+								var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/getBlogs?skip=" + next});
+								
+								request.success(function(data)
+								{
+									//alert(data);
+									
+									$('.pageChange.active').next().addClass("active");
+									
+									$('.pageChange.active').eq(0).removeClass("active");
+									
+									$(window).scrollTop(0);
+									
+									$('#insertionPoint').empty();
+									
+									renderContent(data);
+								});
+								
+								request.error(function(data)
+								{
+									alert(data.responseText);
+								});	
+							}
+						}
+						
+						else
+						{
+							$('.pageChange').removeClass("active");
+							
+							$(this).addClass("active");
+						
+							var skip = $(this).text();
+							
+							var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/getBlogs?skip=" + skip});
+							
+							request.success(function(data)
+							{
+								alert(data);
+								
+								$(window).scrollTop(0);
+								
+								$('#insertionPoint').empty();
+								
+								renderContent(data);
+							});
+							
+							request.error(function(data)
+							{
+								alert(data.responseText);
+							});
+						}
+						
+					});
+				});
+				
+				$('.blogTitle').hover(function()
+				{
+					$(this).css("text-decoration", "underline");
+				},
+				function()
+				{
+					$(this).css("text-decoration", "initial");
+				});
+				
+				$('footer').show();
+				
+				$('.glyphicon-heart').hover(function()
+				{
+					$(this).css("text-shadow","2px 1px 2px pink");
+				},
+	
+				function()
+				{
+					$(this).css("text-shadow", "none");
+				});
+				
+				$(document).keydown(function(e)
+				{
+					if(e.which == 13)
+					{
+						e.preventDefault();
+					}
+				});
+				
+				$('#navSearch').keydown(function(e)
+				{
+					if(e.which == 13)
+					{
+						$('#searchButton').click();
+					}
+				});
+				
+				$('#searchButton, #searchButton2').click(function()
+				{
+					//alert("Click");
+				
+					if($(this).next().val() != "" && $(this).next().val() != " ")
+					{
+						var request = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/searchAll?search=' + $(this).next().val()});
+						
+						request.success(function(data)
+						{	
+							//alert(data);
+						
+							if(data != "No results")
+							{
+								$('#contentFilter').hide();
+							
+								$('.contentChange').removeClass("active");
+								
+								$('.jumbotron h2').text("Loading content ....").css("color", "red");
+													
+								$('.jumbotron h2').text("Search Results").css("color", "black").css("text-shadow", "2px 2px 2px white");
+							
+								var videoGroup = [], blogGroup = [], xclusiveGroup = [];
+								
+								//alert(data);
+								
+								data = JSON.parse(data);
+								
+								$('#insertionPoint').empty();
+								
+								for(var count = 0; count < data.length; count++)
+								{
+									if(data[count].mediaType == "Video")
+									{
+										videoGroup.push(data[count]);
+									}
+									
+									else if(data[count].mediaType == "Blog")
+									{
+										blogGroup.push(data[count]);
+									}
+									
+									else if (data[count].mediaType == "Xclusive")
+									{
+										xclusiveGroup.push(data[count]);
+									}	
+								}
+								
+								renderVideos(videoGroup);
+								
+								renderBlogs(blogGroup);
+								
+								renderXclusives(xclusiveGroup);
+								
+								$('.title').hover(function()
+								{
+									$(this).css("text-decoration", "underline");
+								},
+								function()
+								{
+									$(this).css("text-decoration", "initial");
+								});
+								
+								$('.glyphicon-heart').click(function()
+								{
+									//alert($(this).parent().prev().find(".title").text()[0]);
+								
+									var title = $(this).parent().parent().parent().find(".title").text();
+									
+									var likes = Number($(this).text());
+						
+									var which = $(this);
+						
+									//alert(likes);
+								
+									if(sessionStorage.username != null && sessionStorage.username != undefined)
+									{
+										var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/addLike?user=" + sessionStorage.username + "&collection=Xclusives&title=" + title});	
+								
+										request.success(function(data)
+										{
+											//alert(data);
+										
+											if(data.search("Updated.") != -1)
+											{
+												//alert(likes + 1);
+								
+												$(which).find("span").text(likes + 1);
+												$(which).find(".likes").show();
+											}
+										});
+									}								
+								});
+
+								$('.glyphicon-fire').click(function()
+								{
+									var title = $(this).parent().parent().parent().find(".title").text();
+									
+									var likes = Number($(this).text());
+									
+									var which = $(this);
+									
+									//alert(likes);
+											
+									if(sessionStorage.username != null && sessionStorage.username != undefined)
+									{
+										var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/addLike?user=" + sessionStorage.username + "&collection=Videos&title=" + title});	
+										
+										request.success(function(data)
+										{
+											//alert(data);
+											
+											if(data.search("Updated.") != -1)
+											{
+												//alert(likes + 1);
+											
+												$(which).find("span").text(likes + 1);
+												$(which).find(".likes").show();
+											}
+										});
+									}
+								});
+							}
+							
+							else
+							{
+								alert(data);
+							}
+						});
+						
+						request.error(function(x)
+						{
+							alert(x.responseText);
+						});
+					}
+				});
+				
+				$('.subSearch').click(function(e)
+				{
+					e.preventDefault();
+				
+					//alert("Search");
+					//alert($(this).parent().find("#subContent").val());
+					
+					if($(this).parent().find("#subContent").val() != "" && $(this).parent().find('#subContent').val() != " ")
+					{
+						//alert($(this).parent().find('#subContent').val());
+					
+						var queryRequest = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/searchAll?search=' + $(this).parent().find('#subContent').val()});
+						
+						queryRequest.success(function(data)
+						{	
+							if(data != "No results")
+							{
+								$('#contentFilter').hide();
+							
+								$('.contentChange').removeClass("active");
+								
+								$('.jumbotron h2').text("Loading content ....").css("color", "red");
+													
+								$('.jumbotron h2').text("Search Results").css("color", "black").css("text-shadow", "2px 2px 2px white");
+							
+								var videoGroup = [], blogGroup = [], xclusiveGroup = [];
+								
+								//alert(data);
+								
+								data = JSON.parse(data);
+								
+								$('#insertionPoint').empty();
+								
+								for(var count = 0; count < data.length; count++)
+								{
+									if(data[count].mediaType == "Video")
+									{
+										videoGroup.push(data[count]);
+									}
+									
+									else if(data[count].mediaType == "Blog")
+									{
+										blogGroup.push(data[count]);
+									}
+									
+									else if (data[count].mediaType == "Xclusive")
+									{
+										xclusiveGroup.push(data[count]);
+									}	
+								}
+								
+								renderVideos(videoGroup);
+								
+								renderBlogs(blogGroup);
+								
+								renderXclusives(xclusiveGroup);
+								
+								$('.glyphicon-heart').hover(function()
+								{
+									$(this).css("text-shadow","2px 1px 2px pink");
+								},
+					
+								function()
+								{
+									$(this).css("text-shadow", "none");
+								});
+								
+								$('.glyphicon-heart').click(function()
+								{
+									//alert($(this).parent().prev().find(".title").text()[0]);
+								
+									var title = $(this).parent().parent().parent().find(".title").text();
+									
+									var likes = Number($(this).text());
+						
+									var which = $(this);
+						
+									//alert(likes);
+								
+									if(sessionStorage.username != null && sessionStorage.username != undefined)
+									{
+										var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/addLike?user=" + sessionStorage.username + "&collection=Xclusives&title=" + title});	
+								
+										request.success(function(data)
+										{
+											//alert(data);
+										
+											if(data.search("Updated.") != -1)
+											{
+												//alert(likes + 1);
+								
+												$(which).find("span").text(likes + 1);
+												$(which).find(".likes").show();
+											}
+										});
+									}								
+								});
+
+								$('.glyphicon-fire').click(function()
+								{
+									var title = $(this).parent().parent().parent().find(".title").text();
+									
+									var likes = Number($(this).text());
+									
+									var which = $(this);
+									
+									//alert(likes);
+											
+									if(sessionStorage.username != null && sessionStorage.username != undefined)
+									{
+										var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/addLike?user=" + sessionStorage.username + "&collection=Videos&title=" + title});	
+										
+										request.success(function(data)
+										{
+											//alert(data);
+											
+											if(data.search("Updated.") != -1)
+											{
+												//alert(likes + 1);
+											
+												$(which).find("span").text(likes + 1);
+												$(which).find(".likes").show();
+											}
+										});
+									}
+								});
+							}
+							
+							else
+							{
+								alert(data);
+							}
+						});
+						
+						queryRequest.error(function(data)
+						{
+							alert(data.responseText);
+						});
+					}
+				});
+				
+				$('.glyphicon-heart').click(function()
+				{
+					var title = $(this).parent().parent().parent().find(".title").text();
+					
+					var likes = Number($(this).text());
+		
+					var which = $(this);
+		
+					//alert(title[0]);
+				
+					if(sessionStorage.username != null && sessionStorage.username != undefined)
+					{
+						var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/addLike?user=" + sessionStorage.username + "&collection=Blogs&title=" + title});	
+				
+						request.success(function(data)
+						{
+							if(data.search("Updated.") != -1)
+							{
+								//alert(likes + 1);
+				
+								$(which).find("span").text(likes + 1);
+								$(which).find(".likes").show();
+							}
+						});
+					}								
+				});
+				
+				$('.blogImage').hover(function()
+				{
+					$(this).css("opacity", ".8");
+				},
+				
+				function()
+				{
+					$(this).css("opacity", "initial");
+				});
+				
+				$('.glyphicon-heart').hover(function()
+				{
+					$(this).css("text-shadow","3px 3px 3px pink");
+				},
+
+				function()
+				{
+					$(this).css("text-shadow", "none");
+				});
+				
+				$('#contentFilter').change(function()
+				{	
+					//alert("Change");
+					
+					$('.jumbotron h2').text("Loading Videos ......").css({color: 'red'});
+					
+					$('footer').hide();
+					
+					if($('#contentFilter').val().search("Likes") != -1)
+					{
+						//alert("Likes");
+						sortData("Likes");
+					}
+					
+					else
+					{
+						sortData("Recent");
+					}
+				});
+			});
+			
+			videoRequest.fail(function(x)
+			{
+				alert(x.responseText);
+			});
+			
+		});
+	</script>
+  </head>
+  <body>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+		
+		<nav class = "navbar navbar-default navbar-fixed-top navBlue">
+		
+				 <section class = "container-fluid" id = "shiftNav">
+				 
+				 	<section class = "navbar-header">
+						  
+						<button class = "navbar-toggle collapsed slimNav" data-toggle = "collapse" data-target = "#collapsedNav" aria-expanded = "false">
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+						</button>
+								   
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" id = "navImageContainer" class = "hidden-xs"> <img class = "navbar-brand img-circle" id = "brand1" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" style = "position: relative;width: 100px;" id = "navImageContainer" class = "hidden-md hidden-sm hidden-lg"> <img id = "brand2" class = "navbar-brand img-circle" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<div class = "input-group input-group-sm hidden-md hidden-lg" id = "searchSm"> 
+							<span class = "input-group-addon" id = "searchButton2"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+							
+					</section>
+						  
+					<form class = "navbar-form navbar-right hidden-sm hidden-xs">
+
+						<button type = "button" class = "btn btn-primary btn-sm" id = "logIn" style = "position: relative; right: 15px; top: 20px"> Log In </button>
+						
+						<button type = "button" class = "btn btn-info btn-sm" id = "signUp" style = "position: relative; right: 15px; top: 20px"> Sign Up </button>
+											
+						<div class = "input-group input-group-md" id = "searchLg"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+										
+					</form>  
+						 
+						  
+					<section class = "collapse navbar-collapse" id = "collapsedNav">
+						  
+						<ul class = "nav navbar-nav" id = "navbar-drop">
+								   
+							<li class = "dropdown links"> 
+									   	  
+								<a class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup= "true" aria-expanded = "false"> <h4> <strong> Xclusives </strong> <span class = "caret"> </span> </h4> </a>
+										   
+								<ul class = "dropdown-menu">
+										   	   
+									<li title "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/xclusiveVideos"> <h5> Videos </h5> </a> </li>
+											   
+									<li title = "Interviews"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/interviews"> <h5> Interviews </h5> </a> </li>	
+											   
+								</ul>
+										   
+							</li>
+								   
+							<li class = "links" title = "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/videos"> <h4> <strong> Videos </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Blogs"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogs"> <h4> <strong id = "blogLink"> Blogs </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Shop"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> Shop </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "About"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> About </strong> </h4> </a> </li>
+									  
+						</ul>
+						  
+					</section>
+				 
+				</section>
+		
+		</nav>
+		
+		<section class = "container-fluid" id = "contentContainer">
+			
+			<section class = "row">
+			
+				<section class = "col-md-9 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+				
+					<nav class="navbar navbar-default">
+						
+						<div class="container-fluid" id = "navBlack">
+                  
+						<!-- Brand and toggle get grouped for better mobile display-->
+
+                  <!-- Collect the nav links, forms, and other content for toggling-->
+							
+							<h3 class = "navbar-text hidden-sm hidden-xs" id = "navText"> Freshmin.com </h3>
+							
+						</div>
+						
+					</nav>
+					
+				</section>
+				
+				<section class = "col-md-9 col-sm-12 col-xs-12">
+				
+					<section class = "jumbotron">
+					
+						<h2 id = "loader" > Loading Videos ...... </h2>
+						
+						<section class = "row" id = "insertionPoint">
+						
+							
+						
+						</section>
+					
+					</section>
+				
+				</section>
+			
+			</section>
+			
+		</section>
+		
+		<footer class = "container-fluid">
+				
+			<section class = "row">
+			
+				<section class = "col-md-4 col-sm-4 col-xs-4 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" id = "adminCol">
+				
+					<h3 id = "adminHeader"> Admin Privileges </h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggersAdmin" class = "admin"><p> Blogger Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogAdmin" class = "admin"><p> Blog Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/videoAdmin" class = "admin"><p> Videos </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/originalAdmin" class = "admin"><p> Xclusives </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/newsAdmin" class = "admin"><p> Upload News</p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/hottest" class = "admin"><p> Hottest </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/deleteContent" class = "admin"><p> Deletion </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/updateContent" class = "admin"><p> Update </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/emailUsers" class = "admin"><p> Email </p></a>
+					
+				</section>
+			
+				<section class = "col-md-12 col-sm-12 col-xs-12" id = "userCol">
+				
+					<h3 id = "userHeader"> User Requests</h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggerRequest" class = "user"><p> Blogger Request </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogUpload" class = "user"><p> Blog Requests </p></a>
+				
+				</section>
+			</section>
+			
+			<section class = "container-fluid" id = "copyrightContainer">
+				
+				<img src = "http://freshminlifestyle-westcoast.rhcloud.com/copyrightImage" class = "copyright img-responsive"> <h5 class = "copyrightTitle"> 2016 Freshmin | Smart Designs </h5>
+				
+			</section>
+
+		</footer>
+	
+  </body>
+</html>

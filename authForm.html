@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Wed, 14 Oct 2015 00:20:23 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Freshmin.com [Auth Form]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+		#blackNav
+		{
+			position: relative;
+			background-color: black;
+		}
+	
+		.navBlue
+		{
+			background-color: black;
+		}
+		
+		#navText
+		{
+			position: relative;
+			color: white;
+			left: 05%;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		#blogsContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: lightgrey;
+			border: 2px solid lightgrey;
+			border-radius: 10px;
+		}
+		
+	   #searchLg
+	   {
+			position: relative;
+			top: 15px;
+	   }
+	   
+	   #searchSm
+	   {
+			position: relative;
+			margin-top: 50px;
+			width: 50%;
+	   }
+
+		.page-header
+		{
+			position: relative;
+			text-align: center;
+		}
+
+		.blog
+		{
+			position: relative;
+			width: 100%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		#blogRow
+		{
+			position: relative;
+			width: 100%;
+		}
+
+		.blogContainer
+		{
+			position: relative;
+			width: 100%;
+		}
+
+		.blogTitle
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		#brand2
+		{
+			position: relative;
+			width: 110px;
+			height: 100px;
+		}
+
+		#navbar-drop
+		{
+			position: relative;
+			margin-top: 15px;
+		}
+
+	   .links
+	   {
+			position: relative;
+			text-indent: 20px;
+	   }
+	   
+		#brand1
+	   {
+			position: relative;
+			width: 110px;
+			height: 100px;
+			margin-left: 100px;
+			margin-right: 50px;
+	   }
+		
+		.blogImage
+		{
+			position: relative;
+			width: 100%;
+			height: 270px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			box-shadow: 3px 3px 3px black;
+			cursor: pointer;
+			border: 2px solid lightgrey;
+			border-radius: 10px;
+		}
+		
+		.links a h4
+		{
+			position: relative;
+			color: white;
+		}
+		
+		.contentContainer section section section a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+
+		#searchButton
+		{
+			cursor: pointer;
+		}
+		
+		#searchButton2
+		{
+			cursor: pointer;
+		}
+
+		a
+		{
+			cursor: pointer;
+		}
+		
+		iframe
+		{
+			position: relative;
+			width: 100%;
+			margin-top: 10px;
+			height: 270px;
+			margin-bottom: 20px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 5px 5px 5px black;
+			cursor: pointer;
+			border: 2px solid black;
+		}
+		
+		#adminCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			left: 5%;
+			text-decoration: none;
+		}
+		
+		#userCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		.admin p
+		{
+			color: white;
+			text-indent: 10px;
+			text-decoration: none;
+		}
+		
+		.user p
+		{
+			color: white;
+			text-indent: 10px;
+		}
+		
+		#copyrightContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 280px;
+		}
+		
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+
+		.jumbotron
+		{
+			position: relative;
+			margin-top: -19px;
+		}
+		
+		.glyphicon-fire, .glyphicon-heart
+		{
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+			left: 20%;
+			color: red;
+			cursor: pointer;
+		}
+		
+		#contentContainer
+		{
+			position: relative;
+			margin-top: 150px;
+			margin-bottom: 20px;
+		}
+		
+		.glyphicon-fire, .glyphicon-heart
+		{
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+			left: 20%;
+			color: red;
+			cursor: pointer;
+		}
+
+		video
+		{
+			position: relative;
+		}
+
+		#vid
+		{
+			position: relative;
+			height: 200px;
+		}
+		  
+		#loader
+		{
+			text-align: center;
+			color: red;
+			margin-top: -20px;
+		}
+		
+		.copyright
+		{
+			position: relative;
+			height: 20px;
+			width: 15px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+		}
+		
+		.copyrightTitle
+		{
+			position: relative;
+			color: white;
+		}
+		
+		.video
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			border: 1px solid black;
+			border-radius: 10px;
+		}
+		
+		#xclusivesLink
+		{
+			color: red;
+		}
+	
+		.copyrightTitle,.copyright
+		{
+			position: relative;
+			display: inline-block;
+		}
+		
+		#userHeader, #adminHeader
+		{
+			position: relative;
+			color: dodgerblue;
+			text-shadow: 2px 2px 2px lightgrey;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			display: none;
+		}
+		
+		#userCol
+		{
+			position: relative;
+		}
+		
+		#userCol h3, #userCol a
+		{
+			text-align: center;
+		}
+		
+		.links a h3
+		{
+			position: relative;
+			color: white;
+		}
+		
+		footer
+		{
+			position: relative;
+			background-color: black;
+			width: 100%;
+			top: 0px;
+			display: none;
+		}
+
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+		
+			#authContainer
+			{
+				position: relative;
+				width: 33%;
+				top: 30px;
+			}
+			
+			#authForm
+			{
+				position: relative;
+				width: 100%;
+				border-radius: 10px; 
+				margin-bottom: 15px;
+				padding-top: 50px;
+			}
+	
+		@media only screen and (max-device-width: 480px) 
+		{
+			/* define mobile specific styles come here */
+			#authContainer
+			{
+				position: relative;
+				width: 90%;
+				margin-top: 50px;
+			}
+			
+			#authForm
+			{
+				position: relative;
+				width: 100%;
+				padding-top: 50px;
+			}
+			
+			footer
+			{
+				position: relative;
+				background-color: black;
+				width: 100%;
+				top: 0px;
+			}
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function()
+		{
+			if(sessionStorage.auth != undefined)
+			{
+				$('#userCol').removeClass("col-md-12").removeClass('col-sm-12').removeClass('col-xs-12').addClass("col-sm-4").addClass("col-xs-4").addClass("col-md-4").addClass("col-sm-offset-1").addClass("col-xs-offset-1").addClass("col-md-offset-1s");
+				$('#adminCol').show();
+			}
+			
+			if(sessionStorage.username != undefined)
+			{
+				$('#logIn').remove();
+				
+				$('#signUp').before("<button class = 'btn btn-warning btn-sm' id = 'logOut'> Log Out </button>");
+				
+				$('#logOut').css({ "position": "relative", "right": "15px", "top": "20px"});
+			}
+			
+			$('#logOut').click(function()
+			{
+				sessionStorage.removeItem('username');
+				
+				alert("Logged out");
+				
+				if(sessionStorage.auth)
+				{
+					sessionStorage.removeItem('auth');
+				}
+				
+				$('#logOut').remove();
+				
+				$('#signUp').before("<button type = 'button' class = 'btn btn-primary btn-sm' id = 'logIn'> Log In </button>");
+				
+				$('#logIn').css({ "position": "relative", "right": "15px", "top": "20px"});
+				
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/");
+			});
+			
+			$('#logIn').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/logIn");
+			});
+			
+			$('#signUp').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/signUp");
+			});
+			
+			$('.admin p, .user p').hover(function()
+			{
+				$(this).css("color", "blue");
+			},
+			
+			function()
+			{
+				$(this).css("color", "white");
+			});
+			
+			var authCode = "Trill19090"
+		
+			var code = prompt("Enter auth code.");
+			
+			if(code != authCode)
+			{
+				alert("Unauthorized.");
+				
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/");
+			}
+			
+			else
+			{
+				$('#authContainer').show();
+				
+				$('#authForm').submit(function(e)
+				{
+					e.preventDefault();
+					
+					var fd = new FormData(document.getElementById("authForm"));
+					
+					var adminRequest = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/authCreation", method: "POST", data: fd, contentType: false, processData: false});
+					
+					adminRequest.success(function(data)
+					{
+						alert(data);
+						
+						sessionStorage.username = document.getElementById("authForm").user.value;
+						
+						sessionStorage.auth = true;
+						
+						//alert(sessionStorage.username);
+					});
+					
+					adminRequest.error(function(data)
+					{
+						alert(data.responseText);
+					});
+				});
+			}
+		})
+	</script>
+  </head>
+  <body>
+  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+		<nav class = "navbar navbar-default navbar-fixed-top navBlue">
+		
+				 <section class = "container-fluid" id = "shiftNav">
+				 
+				 	<section class = "navbar-header">
+						  
+						<button class = "navbar-toggle collapsed slimNav" data-toggle = "collapse" data-target = "#collapsedNav" aria-expanded = "false">
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+						</button>
+								   
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" id = "navImageContainer" class = "hidden-xs"> <img class = "navbar-brand img-circle" id = "brand1" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" style = "position: relative;width: 100px;" id = "navImageContainer" class = "hidden-md hidden-sm hidden-lg"> <img id = "brand2" class = "navbar-brand img-circle" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<div class = "input-group input-group-md hidden-md hidden-lg" id = "searchSm"> 
+							<span class = "input-group-addon" id = "searchButton2"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+							
+					</section>
+						  
+					<form class = "navbar-form navbar-right hidden-sm hidden-xs">
+
+						<button type = "button" class = "btn btn-primary btn-sm" id = "logIn" style = "position: relative; right: 15px; top: 20px"> Log In </button>
+						
+						<button type = "button" class = "btn btn-info btn-sm" id = "signUp" style = "position: relative; right: 15px; top: 20px"> Sign Up </button>
+											
+						<div class = "input-group input-group-md" id = "searchLg"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+										
+					</form>  
+						 
+						  
+					<section class = "collapse navbar-collapse" id = "collapsedNav">
+						  
+						<ul class = "nav navbar-nav" id = "navbar-drop">
+								   
+							<li class = "dropdown links"> 
+									   	  
+								<a class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup= "true" aria-expanded = "false"> <h4> <strong> Xclusives </strong> <span class = "caret"> </span> </h4> </a>
+										   
+								<ul class = "dropdown-menu">
+										   	   
+									<li title "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/xclusiveVideos"> <h5> Videos </h5> </a> </li>
+											   
+									<li title = "Interviews"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/interviews"> <h5> Interviews </h5> </a> </li>	
+											   
+								</ul>
+										   
+							</li>
+								   
+							<li class = "links" title = "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/videos"> <h4> <strong> Videos </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Blogs"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogs"> <h4> <strong id = "blogLink"> Blogs </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Shop"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> Shop </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "About"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> About </strong> </h4> </a> </li>
+									  
+						</ul>
+						  
+					</section>
+				 
+				</section>
+		
+		</nav>
+		
+		<section class = "container-fluid" id = "authContainer">
+		
+			<form class = "form" id = "authForm">
+			
+				<section class = "page-header" style = "position: relative; text-align: center;">
+				
+					<h3> Admin Creation </h3>
+				
+				</section>
+			
+				<section class = "form-group">
+				
+					<input type = "text" placeholder = "Enter username" style = "position: relative; margin-bottom: 10px;" name = "user" class = "form-control" required>
+					
+					<input type = "password" placeholder = "Enter password" style = "position: relative; margin-bottom: 10px;" name = "pass" class = "form-control" required>
+					
+					<input type = "email" name = "email" placeholder = "Enter email" class = "form-control" required>
+					
+				</section>
+				
+				<button type = "submit" class = "btn btn-primary"> Submit </button>
+				
+			</form>
+		
+		</section>
+		
+		<footer class = "container-fluid">
+				
+			<section class = "row">
+			
+				<section class = "col-md-4 col-sm-4 col-xs-4 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" id = "adminCol">
+				
+					<h3 id = "adminHeader"> Admin Privileges </h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggersAdmin" class = "admin"><p> Blogger Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogAdmin" class = "admin"><p> Blog Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/videoAdmin" class = "admin"><p> Videos </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/originalAdmin" class = "admin"><p> Xclusives </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/newsAdmin" class = "admin"><p> Upload News</p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/hottest" class = "admin"><p> Hottest </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/deleteContent" class = "admin"><p> Deletion </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/updateContent" class = "admin"><p> Update </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/emailUsers" class = "admin"><p> Email </p></a>
+					
+				</section>
+			
+				<section class = "col-md-12 col-sm-12 col-xs-12" id = "userCol">
+				
+					<h3 id = "userHeader"> User Requests</h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggerRequest" class = "user"><p> Blogger Request </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogUpload" class = "user"><p> Blog Requests </p></a>
+				
+				</section>
+			
+			</section>
+			
+			<section class = "container-fluid" id = "copyrightContainer">
+				
+				<img src = "http://freshminlifestyle-westcoast.rhcloud.com/copyrightImage" class = "copyright img-responsive"> <h5 class = "copyrightTitle"> 2016 Freshmin | Smart Designs </h5>
+				
+			</section>
+
+		</footer>
+	
+  </body>
+</html>
+

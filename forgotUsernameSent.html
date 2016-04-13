@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 24 Oct 2015 23:44:30 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshmin.com [Username Retrieval]</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+	<style>
+		   #logInSignUpContainer
+		   {
+		   		position: relative;
+				margin-top: 50px;
+				width: 80%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+		   }
+		   
+		   .page-header
+		   {
+		   		position: relative;
+				color: white;
+				text-shadow: 2px 2px 2px black;
+		   }
+		   
+		   #formBorder
+		   {
+		   		position: relative;
+				border-left: 2px solid deepskyblue;
+		   }
+		   
+		   .forgot
+		   {
+		   		 position: relative;
+				 font-size: 8px;
+		   }
+		   
+		   .forgot.password
+		   {
+		   		position: relative;
+				margin-top: 5px;
+		   }
+		   
+		   #bday
+		   {
+		   		position: relative;
+				margin-top: 10px;
+		   }
+		   
+		   #signUpButton
+		   {
+		   		position: relative;
+				margin-top: 10px;
+		   }
+		   
+		   .page-header
+		   {
+		   		position: relative;
+				text-align: center;
+		   }
+		   
+		   #logIn .form-group input
+		   {
+		   		 position: relative;
+				 margin-top: 5px;
+		   }
+	
+		   #forgot
+		   {
+				position: relative;
+				width: 50%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+		   }
+
+		   .btn-primary
+		   {
+				position: relative;
+				margin-top: 5px;
+		   }
+
+		   #flash
+		   {
+				position: relative;
+				width: 100%;
+				background-color: blue;
+				text-align: center;
+				border: 2px solid blue;
+				color: white;
+				border-radius: 5px;
+		   }
+		   
+	   #searchLg
+	   {
+			position: relative;
+			top: 15px;
+	   }
+	   
+	   #searchSm
+	   {
+			position: relative;
+			margin-top: 30px;
+			width: 50%;
+	   }
+	   
+		#brand2
+		{
+			position: relative;
+			width: 110px;
+			height: 100px;
+		}
+		
+		@media only screen and (max-device-width: 480px) 
+		{
+			/* define mobile specific styles come here */
+			#forgot
+			{
+				position: relative;
+				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.form-group
+			{
+				position: relative;
+				width: 80%;
+			}
+			
+			#mainContainer
+			{
+				position: relative;
+				width: 100%;
+			}
+			
+			#logInSignUpContainer
+			{
+				position: relative;
+				margin-top: 20px;
+				width: 90%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				top: 70px;
+			}
+			
+			footer
+			{
+				position: relative;
+				background-color: black;
+				width: 100%;
+				top: 110px;
+			}
+		}
+	</style>
+	
+	<script>
+			$(document).ready(function()
+			{	
+				if(sessionStorage.auth != undefined)
+				{
+					$('#userCol').removeClass("col-md-12").removeClass('col-sm-12').removeClass('col-xs-12').addClass("col-sm-4").addClass("col-xs-4").addClass("col-md-4").addClass("col-sm-offset-1").addClass("col-xs-offset-1").addClass("col-md-offset-1s");
+					$('#adminCol').show();
+				}
+				
+				if(sessionStorage.username != undefined)
+				{
+					$('#logIn').remove();
+					
+					$('#signUp').before("<a id = 'logOut'> Log Out? </a>");
+					
+					$('#logOut').css({ "position": "relative", "right": "15px", "top": "20px"});
+				}
+				
+				$('#logOut').click(function()
+				{
+					sessionStorage.removeItem('username');
+					
+					alert("Logged out");
+					
+					if(sessionStorage.auth)
+					{
+						sessionStorage.removeItem('auth');
+					}
+					
+					$('#logOut').remove();
+					
+					$('#signUp').before("<a id = 'logIn'> Log In? </a>");
+					
+					$('#logIn').css({ "position": "relative", "right": "15px", "top": "20px"});
+				});
+			
+				$('#forgot').submit(function(e)
+				{
+					e.preventDefault();
+					
+					var request = $.ajax({url: "http://freshminlifestyle-westcoast.rhcloud.com/forgotUser?email=" + $('input[name = "email"]').val()});
+					
+					request.success(function(data)
+					{
+						alert(data);
+					});
+					
+					request.error(function(x, data)
+					{
+						alert(data.responseText);
+					});
+					
+				});
+			
+				$('.links a h4').hover(function()
+				{
+					$(this).css("color", "blue");
+				},
+				
+				function()
+				{
+					$(this).css("color", "white");
+				});
+			});
+	</script>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+  
+		<nav class = "navbar navbar-default navbar-fixed-top navBlue">
+		
+				 <section class = "container-fluid" id = "shiftNav">
+				 
+				 	<section class = "navbar-header">
+						  
+						<button class = "navbar-toggle collapsed slimNav" data-toggle = "collapse" data-target = "#collapsedNav" aria-expanded = "false">
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+						</button>
+								   
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" id = "navImageContainer" class = "hidden-xs"> <img class = "navbar-brand img-circle" id = "brand1" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" style = "position: relative;width: 100px;" id = "navImageContainer" class = "hidden-md hidden-sm hidden-lg"> <img id = "brand2" class = "navbar-brand img-circle" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<div class = "input-group input-group-md hidden-md hidden-lg" id = "searchSm"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+							
+					</section>
+						  
+					<form class = "navbar-form navbar-right hidden-sm hidden-xs">
+
+						<button type = "button" class = "btn btn-primary btn-sm" id = "logIn" style = "position: relative; right: 15px; top: 20px"> Log In </button>
+						
+						<button type = "button" class = "btn btn-info btn-sm" id = "signUp" style = "position: relative; right: 15px; top: 20px"> Sign Up </button>
+											
+						<div class = "input-group input-group-md" id = "searchLg"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+										
+					</form>    
+						 
+						  
+					<section class = "collapse navbar-collapse" id = "collapsedNav">
+						  
+						<ul class = "nav navbar-nav" id = "navbar-drop">
+								   
+							<li class = "dropdown links"> 
+									   	  
+								<a class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup= "true" aria-expanded = "false"> <h4> <strong> Xclusives </strong> <span class = "caret"> </span> </h4> </a>
+										   
+								<ul class = "dropdown-menu">
+										   	   
+									<li title "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/xclusiveVideos"> <h5> Videos </h5> </a> </li>
+											   
+									<li title = "Interviews"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/interviews"> <h5> Interviews </h5> </a> </li>	
+											   
+								</ul>
+										   
+							</li>
+								   
+							<li class = "links" title = "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/videos"> <h4> <strong> Videos </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Blogs"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogs"> <h4> <strong id = "blogLink"> Blogs </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Shop"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> Shop </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "About"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> About </strong> </h4> </a> </li>
+									  
+						</ul>
+						  
+					</section>
+				 
+				</section>
+		
+		</nav>
+
+  		<section class = "row" id = "logInSignUpContainer">
+  		 		 
+				 <section class = "col-md-12 col-sm-12 col-xs-12">
+				 
+						  <form class = "form" method = "POST" action = "/forgotUser" id = "forgot">
+
+							<section class = "container-fluid" id = "flash">
+								Your username was sent
+							</section>
+						  		   
+								   <section class = "page-header">
+								   			<h1> Enter Email <h1>
+								   </section>
+						  
+				 	   	  		   <section class = "form-group">
+				 		  		   			<input type = "text" name = "email" placeholder = "Enter Email" class = "form-control"/ required>
+											<button class = "btn btn-primary" type = "submit"> Log In </button>
+						  			</section>
+						  </form>
+				</section>
+	</section>
+  
+  </body>
+</html>

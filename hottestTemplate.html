@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Wed, 14 Oct 2015 00:20:23 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+		
+		#hottestContainer
+		{
+			position: relative;
+			width: 100%;
+			background-color: lightgrey;
+			color: white;
+		}
+		
+		#containerTitle
+		{
+			position: relative;
+			text-align: center;
+			text-shadow: 3px 3px 3px red;
+		}
+		
+		#hottest
+		{
+			position: relative;
+			width: 50%;
+			background-color: black;
+			margin-bottom: 50px;
+			border-radius: 10px;
+			border: 2px 2px 2px lightgrey;
+		}
+		
+		iframe
+		{
+			position: relative;
+			width: 95%;
+			height: 200px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			box-shadow: 3px 3px 3px white;
+		}
+		
+		#hottestTitle
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+		
+		#hottestDate
+		{
+			position: relative;
+			color: white;
+			margin-top: 5px;
+		}
+		
+		#artistName
+		{
+			position: relative;
+			top: 15px;
+			text-align: center;
+		}
+		
+		#hottestCol1
+		{
+			position: relative;
+		}
+		
+		#hottestCol2
+		{
+			position: relative;
+			height: 100%;
+		}
+		
+		.hottestSocial
+		{
+			position: relative;
+			width: 20px;
+			height: 20px;
+			margin-bottom: 20px;
+		}
+		
+		#socialContainer
+		{
+			position: relative;
+			width: 140px;
+			margin-top: 25px;
+		}
+		
+		#hottestCover
+		{
+			position: relative;
+			height: 80px;
+			margin-top: 35px;
+			box-shadow: 1px 1px 1px blue;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+	</style>
+	
+	<script>
+		$(document).ready(function()
+		{
+			function renderHottest(data)
+			{
+				data.date = new Date(data.date);
+			
+				var hottestMonth = data.date.getMonth() + 1;
+				
+				var hottestYear = data.date.getFullYear();
+				
+				var hottestDay = data.date.getDate() + 1;
+				
+				data.date = hottestMonth + "-" + hottestDay + "-" + hottestYear;
+			
+				$('#hottestContainer').append('<h1 id = "containerTitle"> Hottest Of The Week </h1>' +
+									
+										'<section class = "container-fluid" id = "hottest">' +
+											
+											'<section class = "row">' +
+											
+												'<section class = "col-md-8 col-sm-12 col-xs-12" id = "hottestCol1">' +
+												
+													'<h3 id = "hottestTitle">' + data.Title + '</h3>' +
+													
+													'<iframe width="854" height="480" src="https://www.youtube.com/embed/7Mp3pOrodq8" frameborder="0" allowfullscreen></iframe>' +
+												
+												'</section>' +
+												
+												'<section class = "col-md-3 col-sm-12 col-xs-12" id = "hottestCol2">' +
+												
+													'<p id = "hottestDate">' + data.date + '</p>' +
+													
+													'<h5 id = "artistName">' + data.Artist + '</h5>' +
+													
+													'<img id = "hottestCover" class = "img-responsive" src = "http://localhost:3000/hottestImage?image=' + data.CoverImg + '" title = "Mixtape Cover" />' +
+															
+													'<section class = "container-fluid" id = "socialContainer">' +
+														
+														'<a href = "#"><img src = "http://localhost:3000/socialImages?image=facebook.jpe" class = "img-rounded hottestSocial" title = "Facebook" /></a>' +
+															
+														'<a href = "#"><img src = "http://localhost:3000/socialImages?image=insta.jpe" class = "img-rounded hottestSocial" title = "Instagram" /></a>' +
+																	
+														'<a href = "#"><img src = "http://localhost:3000/socialImages?image=twitter.png" class = "img-rounded hottestSocial" title = "Twitter" /></a>' +
+																	
+														'<a href = "#"><img src = "http://localhost:3000/socialImages?image=soundCloud.png" class = "img-rounded hottestSocial"  title = "Soundcloud"/></a>' +
+														
+													'</section>' +
+													
+												'</section>' +
+											
+											'</section>' +
+											
+										'</section>');
+			}
+		
+			var request = $.ajax({url: 'http://localhost:3000/getHottest'});
+			
+			request.success(function(hottestData)
+			{	
+				hottestData = JSON.stringify(hottestData)
+				
+				renderHottest(JSON.parse(hottestData));
+				
+				$('.hottestSocial').eq(1).css("left", "8px");
+				$('.hottestSocial').eq(2).css("left", "16px");
+				$('.hottestSocial').eq(3).css("left", "24px");
+			});
+		
+			var hottestCount = 0;
+		
+			var hottestTitleInterval = setInterval(function()
+			{
+				if(hottestCount == 0)
+				{
+					$('#containerTitle').css("text-shadow", "3px 3px 3px yellow");
+					hottestCount++;
+				}
+				
+				else
+				{
+					$('#containerTitle').css("text-shadow", "3px 3px 3px red");
+					hottestCount = 0;
+				}
+				
+			}, 2500);
+		});
+	</script>
+  </head>
+  <body>
+  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+	
+	<section class = "container-fluid" id = "hottestContainer">
+	
+	</section>
+	
+  </body>
+</html>
