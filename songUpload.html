@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 19 Sep 2015 22:32:01 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		
+	<style>
+	
+		#blackNav
+		{
+			position: relative;
+			background-color: black;
+		}
+	
+		.navBlue
+		{
+			background-color: black;
+		}
+		
+		#navText
+		{
+			position: relative;
+			color: white;
+			left: 05%;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		#brand2
+		{
+			position: relative;
+			width: 110px;
+			height: 100px;
+		}
+
+		#navbar-drop
+		{
+			position: relative;
+			margin-top: 15px;
+		}
+
+	   .links
+	   {
+			position: relative;
+			text-indent: 20px;
+	   }
+	   
+		.links a h4
+		{
+			position: relative;
+			color: white;
+		}
+		
+		#searchButton
+		{
+			cursor: pointer;
+		}
+		
+		#searchButton2
+		{
+			cursor: pointer;
+		}
+
+		a
+		{
+			cursor: pointer;
+		}
+		
+		#adminCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			left: 5%;
+			text-decoration: none;
+		}
+		
+		#userCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		.admin p
+		{
+			color: white;
+			text-indent: 10px;
+			text-decoration: none;
+		}
+		
+		.user p
+		{
+			color: white;
+			text-indent: 10px;
+		}
+		
+		#copyrightContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 280px;
+		}
+		
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+		
+		.copyright
+		{
+			position: relative;
+			height: 20px;
+			width: 15px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+		}
+		
+		.copyrightTitle
+		{
+			position: relative;
+			color: white;
+		}
+	   
+		#brand1
+	   {
+			position: relative;
+			width: 110px;
+			height: 100px;
+			margin-left: 100px;
+			margin-right: 50px;
+	   }
+		
+	   #searchLg
+	   {
+			position: relative;
+			top: 15px;
+	   }
+	   
+	   #searchSm
+	   {
+			position: relative;
+			margin-top: 30px;
+			width: 50%;
+	   }
+
+		.page-header
+		{
+			position: relative;
+			text-align: center;
+		}
+
+		.form-control
+		{
+			position: relative;
+			width: 60%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		input[type = "radio"]
+		{
+			position: relative;
+			width: 05%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		 }
+
+		.form-group
+		{
+			position: relative;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.page-header
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 2px orange;
+		}
+
+		.socialMedia
+		{
+			position: relative;
+		}
+
+		#socialMedia, #videoLink
+		{
+			position: relative;
+			text-align: center;
+			margin-top: 10px;
+			color: blue;
+		}
+
+		.validation
+		{
+			position: relative;
+			color: red;
+			margin-left: 30px;
+			display: none;
+		}
+
+		label
+		{
+			position: relative;
+			margin-left: 20%;
+			margin-top: 10px;
+			color: blue;
+		 }
+
+		label[for = "videoLink"]
+		{
+			position: relative;
+			display: none;
+		}
+
+		.formContainer
+		{
+			position: relative;
+			width: 75%;
+			background-color: lightgrey;
+			border-radius: 10px; 
+			border: 2px 2px 2px lightgrey;
+		}
+
+		input[name = "videoLink"]
+		{
+			position: relative;
+		}
+
+		.formHeader
+		{
+			position: relative;
+			color: white;
+			text-align:center;
+			text-shadow: 2px 2px 2px green;
+			top: 10px;
+		}
+
+		.artistOptions
+		{
+			position: relative;
+			color: white;
+		}
+
+		.media
+		{
+			display: none;
+		}
+		
+		.copyrightTitle,.copyright
+		{
+			position: relative;
+			display: inline-block;
+		}
+		
+		#userHeader, #adminHeader
+		{
+			position: relative;
+			color: dodgerblue;
+			text-shadow: 2px 2px 2px lightgrey;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			display: none;
+		}
+		
+		#userCol
+		{
+			position: relative;
+		}
+		
+		#userCol h3, #userCol a
+		{
+			text-align: center;
+		}
+		
+		.links a h3
+		{
+			position: relative;
+			color: white;
+		}
+		
+		footer
+		{
+			position: relative;
+			background-color: black;
+			width: 100%;
+			top: 0px;
+			display: none;
+		}
+
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+		
+		@media only screen and (max-device-width: 480px) 
+		{
+		
+			.formContainer
+			{
+				position: relative;
+				width: 95%;
+				background-color: white;
+			}	
+			
+			footer
+			{
+				position: relative;
+				background-color: black;
+				width: 100%;
+				top: 0px;
+			}
+			
+			.page-header
+			{
+				position: relative;
+				margin-top: 100px;
+			}
+			
+			#artistForm
+			{
+				position: relative;
+				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.form-control
+			{
+				position: relative;
+				width: 100%;
+			}
+			
+			label
+			{
+				position: relative;
+				margin-top: 10px;
+				color: blue;
+				margin-left: 0%;
+			 }
+		}
+	</style>
+
+
+	<script>
+		$(document).ready(function()
+		{
+			//alert(sessionStorage.username);
+		
+			var radioSelectTracker = false;
+
+			var radioSelectTracker2 = false;
+
+			var formActive = false;
+			
+			if(sessionStorage.auth != undefined)
+			{
+				$('#userCol').removeClass("col-md-12").removeClass('col-sm-12').removeClass('col-xs-12').addClass("col-sm-4").addClass("col-xs-4").addClass("col-md-4").addClass("col-sm-offset-1").addClass("col-xs-offset-1").addClass("col-md-offset-1s");
+				$('#adminCol').show();
+			}
+			
+			else
+			{
+				$('body').empty();
+				alert("Unauthorized");
+			}
+			
+			if(sessionStorage.username != undefined)
+			{
+				$('#logIn').remove();
+				
+				$('#signUp').before("<button class = 'btn btn-warning btn-sm' id = 'logOut'> Log Out </button>");
+				
+				$('#logOut').css({ "position": "relative", "right": "15px", "top": "20px"});
+			}
+			
+			$('#logOut').click(function()
+			{
+				sessionStorage.removeItem('username');
+				
+				alert("Logged out");
+				
+				if(sessionStorage.auth)
+				{
+					sessionStorage.removeItem('auth');
+				}
+				
+				$('#logOut').remove();
+				
+				$('#signUp').before("<button type = 'button' class = 'btn btn-primary btn-sm' id = 'logIn'> Log In </button>");
+				
+				$('#logIn').css({ "position": "relative", "right": "15px", "top": "20px"});
+				
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/");
+			});
+			
+			$('#logIn').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/logIn");
+			});
+			
+			$('#signUp').click(function()
+			{
+				window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/signUp");
+			});
+
+			$('.radio.social').click(function()
+			{
+				$('.media').toggle();
+
+				if(!radioSelectTracker)	
+				{
+					$('input[type = "hidden"]').each(function()
+					{
+						$(this).attr("type", "url");
+					});
+
+					radioSelectTracker = true;		
+				}
+	
+				else
+				{
+					$(".socialMedia").each(function()
+					{
+						$(this).prop("type", "hidden");
+						$(this).prev().css("display", "none");
+					});
+					
+					radioSelectTracker = false;
+
+					$('.radio.social').prop("checked", false);
+				}
+			});
+
+			$('.radio.video').click(function()
+			{
+				if(!radioSelectTracker2)	
+				{
+					$('input[name = "videoLink"]').prop("type", "url");
+
+					$('label[for = "videoLink"]').css("display", "block");
+
+					radioSelectTracker2 = true;		
+				}
+	
+				else
+				{
+					$('input[name = "videoLink"]').prop("type", "hidden");
+
+					$('label[for = "videoLink"]').css("display", "none");
+					
+					radioSelectTracker2 = false;
+
+					$('.radio.video').prop("checked", false);
+				}
+			});
+
+			function sendRequest(date)
+			{
+				var fd = new FormData(document.getElementById("artistForm"));
+				
+				//fd.append("user", sessionStorage.username);
+
+				var request = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/singleUpload', method: 'POST', data: fd, processData: false, contentType: false});
+				
+				$('body').empty();
+				
+				$('body').append('<h1 id = "waitMessage" style = "position: relative; text-align: center; color: red;"> Waiting on response .....');
+				
+				var timer = setInterval(function()
+				{
+					$('#waitMessage').toggle();
+					
+				}, 800);
+				
+				request.success(function(data)
+				{
+					$('#waitMessage').remove();
+					clearInterval(timer);
+					alert(data);
+					window.location.assign("http://freshminlifestyle-westcoast.rhcloud.com/singles");
+				});
+	
+				request.fail(function(x)
+				{
+					alert(x.responseText);
+				});
+
+				//$('form').unbind("submit").submit();
+			
+			}
+
+			function socialMediaFB(fb)
+			{
+				var checkUrl = fb.val();
+
+				var valid;
+
+				checkUrl.toLowerCase();
+
+				checkUrl = checkUrl.search("facebook");
+
+				//alert(checkUrl);
+
+				if(checkUrl == -1)
+				{
+					fb.prev().find('.validation').text('You Did Not Enter The Valid Url');
+
+					fb.prev().find('.validation').css("display", "initial");
+
+					//alert($(this).prev().find('.validation').css("display"));
+
+					valid = false;
+				}
+
+				else
+				{
+					if($(this).prev().find('.validation').is(':visible'))
+					{
+						fb.prev().find(".validation").css("display", "none");
+					}
+
+					valid = true;
+				}
+
+				return valid;
+			}
+
+			function socialMediaInsta(insta)
+			{
+				var valid;
+
+				var checkUrl = insta.val();
+	
+				checkUrl.toLowerCase();
+
+				checkUrl = checkUrl.search("Instagram");
+
+				//alert(checkUrl);
+
+				if(checkUrl == -1)
+				{
+					insta.prev().find('.validation').text('You Did Not Enter The Valid Url');
+			
+					insta.prev().find('.validation').css("display", "initial");
+	
+					//alert($(this).prev().find('.validation').css("display"));
+
+					valid = false;
+				}
+
+				else
+				{
+					if(insta.prev().find('.validation').is(':visible'))
+					{
+						insta.prev().find(".validation").css("display", "none");
+					}
+
+					valid = true;
+				}
+
+				return valid;
+			}
+
+			function socialMediaSC(sc)
+			{
+				var valid;
+
+				var checkUrl = sc.val();
+	
+				checkUrl.toLowerCase();
+
+				checkUrl = checkUrl.search("soundcloud");
+
+				//alert(checkUrl);
+
+				if(checkUrl == -1)
+				{
+					sc.prev().find('.validation').text('You Did Not Enter The Valid Url');
+			
+					sc.prev().find('.validation').css("display", "initial");
+	
+					//alert($(this).prev().find('.validation').css("display"));
+
+					valid = false;
+				}
+
+				else
+				{
+					if(sc.prev().find('.validation').is(':visible'))
+					{
+						sc.prev().find(".validation").css("display", "none");
+					}
+
+					valid = true;
+				}
+
+				return valid;
+			}
+
+			function socialMediaTwit(twit)
+			{
+				var valid;
+
+				var checkUrl = twit.val();
+	
+				checkUrl.toLowerCase();
+
+				checkUrl = checkUrl.search("twitter");
+
+				//alert(checkUrl);
+
+				if(checkUrl == -1)
+				{
+					twit.prev().find('.validation').text('You Did Not Enter The Valid Url');
+			
+					twit.prev().find('.validation').css("display", "initial");
+	
+					alert(twit.prev().find('.validation').css("display"));	
+	
+					valid = false;
+				}
+
+				else
+				{
+					if(twit.prev().find('.validation').is(':visible'))
+					{
+						twit.prev().find(".validation").css("display", "none");
+					}
+
+					valid = true;
+				}
+
+				return valid;
+			}
+
+			validate = new Object();
+
+			validate.media = function()
+			{
+				var media = $('.socialMedia');
+
+				var valid = []; // must equal 4 by end of loop of social media
+
+				media.each(function()
+				{
+					if($(this).val() == "")
+					{
+						valid.push(true);
+						return 0;
+					}
+
+					else
+					{
+						var mediaUrl = $(this).val();
+		
+						var validMedia = mediaUrl.search('.com');
+
+						if(validMedia == -1)
+						{
+							$(this).prev().find('.validation').css('display', 'initial');
+							valid.push(false);
+						}
+
+						else
+						{
+							var platform = $(this).prop('name');
+
+							if(platform.search("FB") > -1)
+							{
+								valid.push(socialMediaFB($(this)));
+							}
+
+							if(platform.search("Insta") > -1)
+							{
+								valid.push(socialMediaInsta($(this)));
+							}
+
+							if(platform.search("SC") > -1)
+							{
+								valid.push(socialMediaSC($(this)));
+							}
+						
+
+							if(platform.search("Twit") > -1)
+							{
+								valid.push(socialMediaTwit($(this)));
+							}								
+						}
+					}
+				});
+
+				return valid;
+			};
+
+			$('#artistForm').submit(function(e)
+			{
+				e.preventDefault();
+				
+				var date = new Date();
+
+				if($('.radio.social').is(":selected"))
+				{
+					var valid = validate.media();
+
+					for(var count = 0; count < valid.length; count++)
+					{
+						if(valid[count] != true)
+						{
+							return 0;
+						}
+					}
+				}
+
+				sendRequest(date);						
+			});
+		});
+	</script>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
+		
+		<nav class = "navbar navbar-default navbar-fixed-top navBlue">
+		
+				 <section class = "container-fluid" id = "shiftNav">
+				 
+				 	<section class = "navbar-header">
+						  
+						<button class = "navbar-toggle collapsed slimNav" data-toggle = "collapse" data-target = "#collapsedNav" aria-expanded = "false">
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+						</button>
+								   
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" id = "navImageContainer" class = "hidden-xs"> <img class = "navbar-brand img-circle" id = "brand1" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" style = "position: relative;width: 100px;" id = "navImageContainer" class = "hidden-md hidden-sm hidden-lg"> <img id = "brand2" class = "navbar-brand img-circle" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<div class = "input-group input-group-md hidden-md hidden-lg" id = "searchSm"> 
+							<span class = "input-group-addon" id = "searchButton2"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+							
+					</section>
+						  
+					<form class = "navbar-form navbar-right hidden-sm hidden-xs">
+
+						<button type = "button" class = "btn btn-primary btn-sm" id = "logIn" style = "position: relative; right: 15px; top: 20px"> Log In </button>
+						
+						<button type = "button" class = "btn btn-info btn-sm" id = "signUp" style = "position: relative; right: 15px; top: 20px"> Sign Up </button>
+											
+						<div class = "input-group input-group-md" id = "searchLg"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+										
+					</form>  
+						 
+						  
+					<section class = "collapse navbar-collapse" id = "collapsedNav">
+						  
+						<ul class = "nav navbar-nav" id = "navbar-drop">
+								   
+							<li class = "dropdown links"> 
+									   	  
+								<a class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup= "true" aria-expanded = "false"> <h4> <strong> Xclusives </strong> <span class = "caret"> </span> </h4> </a>
+										   
+								<ul class = "dropdown-menu">
+										   	   
+									<li title "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/xclusiveVideos"> <h5> Videos </h5> </a> </li>
+											   
+									<li title = "Interviews"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/interviews"> <h5> Interviews </h5> </a> </li>	
+											   
+								</ul>
+										   
+							</li>
+								   
+							<li class = "links" title = "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/videos"> <h4> <strong> Videos </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Blogs"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogs"> <h4> <strong id = "blogLink"> Blogs </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Shop"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> Shop </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "About"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> About </strong> </h4> </a> </li>
+									  
+						</ul>
+						  
+					</section>
+				 
+				</section>
+		
+		</nav>
+		
+		<section class = "page-header">
+				 	 
+			<h1> Top Song Upload</h1>
+					 
+		</section>
+		
+		<section class = "container-fluid formContainer">
+
+		<form class = "form" enctype = "multipart/form-data" id = "artistForm">
+		
+			 <h1 class = "formHeader"> Artist Info </h1>		
+	
+			  <section class = "form-group">
+			  		   
+					   <input type = "text" placeholder = "Enter Song Title" class = "form-control" name = "songTitle" required>
+					   
+					   <input type = "text" placeholder = "Enter Artist Name" class = "form-control" name = "artistName" required>
+					   
+					   <label for = "artistName"> Song </label>
+					   <input type = "file" name = "song" class = "form-control" required>
+					   
+					   <label for = "artistName"> Cover Image </label>
+					   <input type = "file" name = "songCoverImg" class = "form-control" required>
+
+				      	   <p id = "socialMedia"> <strong class = "artistOptions" style = "color: blue;"> Does the artist have social media contacts? </strong><p> <input type = "radio" class = "form-control radio social">
+					   <label for = "artistMediaFB" class = "media"> Facebook <span class = "validation"> You Must Enter An Url For Facebook </span> </label> 
+					   <input type = "hidden" placeholder = "Enter Artist Facebook Profile Link" class = "form-control socialMedia" name = "artistMediaFB">
+					   
+					   <label for = "artistMediaInsta" class = "media"> Instagram <span class = "validation"> You Must Enter An Url For Instagram </span> </label>
+					   <input type = "hidden" placeholder = "Enter Arist Instagram Profile Link" class = "form-control socialMedia" name = "artistMediaInsta">
+
+					   <label for = "artistMediaSC" class = "media"> Sound Cloud </span class = "validation"> You Must Enter An Url For Sound Cloud </span> </label>		
+					   <input type = "hidden" placeholder = "Enter Artist SoundCloud Profile Link" class = "form-control socialMedia" name = "artistMediaSC">
+	
+					   <label for = "artistMediaTwit" class = "media"> Twitter <span class = "validation"> You Must Enter An Url For Twitter </span> </label>
+					   <input type = "hidden" placeholder = "Enter Artist Twitter Profile Link" class = "form-control socialMedia" name = "artistMediaTwit">
+					 
+					   <p id = "videoLink"> <strong class = "artistOptions" style = "color: blue;"> Does the song have a video? </strong> </p>  <input type = "radio" class = "form-control radio video">
+					   <label for = "videoLink"> Video Link </label>
+					   <input type = "hidden" placeholder = "Enter Link to Video" class = "form-control" name = "videoLink">
+
+					   <button type = "submit" id = "songSubmission" style = "position: relative; margin-top: 5px; width: 50%; display: block; margin-left: auto; margin-right: auto;" class = "btn-primary form-control"> Submit </button>
+			  </section>
+			  
+		</form>
+    
+  </body>
+</html>

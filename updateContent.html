@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Thu, 12 Nov 2015 22:12:30 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshmin.com [Updates]</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+	<style>
+		.navBlue
+		{
+			background-color: black;
+		}
+
+		.collapsed
+		{
+			position: relative;
+			margin-bottom: -20px;
+		}
+
+		#blogsContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: lightgrey;
+			border: 2px solid lightgrey;
+			border-radius: 10px;
+		}
+		
+		.page-header
+		{
+			position: relative;
+			text-align: center;
+		}
+		
+		.content
+		{
+			position: relative;
+			width: 100%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		
+		#blogRow
+		{
+			position: relative;
+			width: 100%;
+		}
+		
+		.blogContainer
+		{
+			position: relative;
+			width: 100%;
+		}
+		
+		.blogTitle
+		{
+			position: relative;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		.links a h4
+		{
+			position: relative;
+			color: white;
+		}
+		
+		#brand1
+		{
+			position: relative;
+			width: 100px;
+			height: 100px;
+			left: 50%;
+		}
+	   
+		#navbar-drop
+		{
+			position: relative;
+			margin-top: 15px;
+		}
+		
+		.links
+		{
+			position: relative;
+			margin-left: 65px;
+		}
+	   
+		#search
+		{
+			position: relative;
+			margin-top: 35px;
+		}
+	   
+		.title
+		{
+			text-decoration: none;
+		}
+		
+		label
+		{
+			margin-left: 10px;
+			margin-right: 10px;
+			color: blue;
+		}
+		
+		.page-header h1
+		{
+			position: relative;
+			text-align: center;
+			text-shadow: 1px 1px 1px blue;
+		}
+		
+		#coverImg
+		{
+			position: relative;
+			display: none;
+		}
+		
+		footer
+		{
+			position: relative;
+			background-color: black;
+			width: 100%;
+			top: 244px;
+		}
+		
+		#adminCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			left: 5%;
+			text-decoration: none;
+		}
+		
+		#userCol a
+		{
+			position: relative;
+			text-decoration: none;
+		}
+		
+		.admin p
+		{
+			color: white;
+			text-indent: 10px;
+			text-decoration: none;
+		}
+		
+		.user p
+		{
+			color: white;
+			text-indent: 10px;
+		}
+		
+		#copyrightContainer
+		{
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 280px;
+		}
+		
+		.copyright
+		{
+			position: relative;
+			height: 20px;
+			width: 15px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+		}
+		
+		.copyrightTitle
+		{
+			position: relative;
+			color: white;
+		}
+	
+		.copyrightTitle,.copyright
+		{
+			position: relative;
+			display: inline-block;
+		}
+		
+		#userHeader, #adminHeader
+		{
+			position: relative;
+			color: dodgerblue;
+			text-shadow: 2px 2px 2px lightgrey;
+		}
+		
+		#adminCol
+		{
+			position: relative;
+			display: none;
+		}
+		
+		#userCol
+		{
+			position: relative;
+		}
+		
+		#userCol h3, #userCol a
+		{
+			text-align: center;
+		}
+		
+		.navbar-form
+		{
+			position: relative;
+			border: none;
+		}
+		
+		#updateForm
+		{
+			position: relative;
+			width: 80%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+	   #searchLg
+	   {
+			position: relative;
+			top: 15px;
+	   }
+	   
+	   #searchSm
+	   {
+			position: relative;
+			margin-top: 50px;
+			width: 50%;
+	   }
+	   
+		#brand2
+		{
+			position: relative;
+			width: 110px;
+			height: 100px;
+		}
+		
+		@media only screen and (max-device-width: 480px) 
+		{
+			/* define mobile specific styles come here */
+			 #updateContainer
+			 {
+				position: relative;
+				width: 95%;
+			 }
+			 
+			 .form-group
+			 {
+				position: relative;
+				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			 }
+			
+			#updateForm
+			{
+				position: relative;
+				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			footer
+			{
+				position: relative;
+				background-color: black;
+				width: 100%;
+				top: 0px;
+			}
+			
+			.updateInput
+			{
+				position: relative;
+				margin-top: 5px;
+			}
+		}
+	</style>
+	
+	<script>
+			$(document).ready(function()
+			{
+				if(!sessionStorage.auth)
+				{
+					$('body').empty();
+					alert("Unauthorized");
+					return 0;
+				}
+				
+				else
+				{
+					$('#userCol').removeClass("col-md-12").removeClass('col-sm-12').removeClass('col-xs-12').addClass("col-sm-4").addClass("col-xs-4").addClass("col-md-4").addClass("col-sm-offset-1").addClass("col-xs-offset-1").addClass("col-md-offset-1s");
+					$('#adminCol').show();
+				}
+			
+				$('.links a h4').hover(function()
+				{
+					$(this).css("color", "blue");
+				},
+				
+				function()
+				{
+					$(this).css("color", "white");
+				});
+			
+				if(sessionStorage.username != undefined)
+				{
+					$('#logIn').remove();
+					
+					$('#signUp').before("<a id = 'logOut'> Log Out? </a>");
+					
+					$('#logOut').css({ "position": "relative", "right": "15px", "top": "20px"});
+				}
+				
+				$('#logOut').click(function()
+				{
+					sessionStorage.removeItem('username');
+					
+					alert("Logged out");
+					
+					if(sessionStorage.auth)
+					{
+						sessionStorage.removeItem('auth');
+					}
+					
+					$('#logOut').remove();
+					
+					$('#signUp').before("<a id = 'logIn'> Log In? </a>");
+					
+					$('#logIn').css({ "position": "relative", "right": "15px", "top": "20px"});
+				});
+
+				$('.admin p, .user p').hover(function()
+				{
+					$(this).css("color", "blue");
+				},
+				
+				function()
+				{
+					$(this).css("color", "white");
+				});
+			
+				function Validation(link)
+				{
+					this.link = link;
+				}
+			
+				$('#updateForm').submit(function(e)
+				{
+					e.preventDefault();
+					
+					var Confirm = confirm("Is the information listed correct? If so, confirm your update. ( Content Type: " + $('select[name = "type"]').val() + ", Content Title: " + $('input[name = "title"]').val() + ", Update: New " + $('select[name = "updateType"]').val() + "(" + $('input[name = "update"]').val() + ") )");
+					
+					if(Confirm)
+					{
+						if($('#updateContent').val() == "Video Link")
+						{
+							var validate = new Validation($('input[name = "update"]').val());
+							
+							validate.valid = function()
+							{
+								if(this.link.search("<iframe") == -1 || this.link.search("</iframe>") == -1 || this.link.search("youtube") == -1 )
+								{
+									//alert(this.videoLink);
+									alert("You did not enter an a valid youtube link, enter another and try again.");
+									return false;
+								}
+								
+								return true;
+							};
+							
+							var valid = validate.valid();
+							
+							if(valid)
+							{
+								sendRequest($('select[name = "type"]').val(), $('input[name = "title"]').val(), $('select[name = "updateType"]').val(), $('input[name = "update"]').val() );
+							}
+						}
+						
+						else
+						{
+							sendRequest($('select[name = "type"]').val(), $('input[name = "title"]').val(), $('select[name = "updateType"]').val(), $('input[name = "update"]').val() );
+						}
+					}
+				});
+				
+				function sendRequest(contentType, contentTitle, updateType, update)
+				{
+					//alert(contentType + " " + contentTitle + " " + updateType + " " + update);
+				
+					var fd = new FormData(document.getElementById('updateForm'));
+					
+					var request = $.ajax({url: 'http://freshminlifestyle-westcoast.rhcloud.com/updateContent', method: "POST", data: fd, contentType: false, processData: false});
+					
+					request.success(function(data)
+					{
+						alert(data);
+						location.reload();
+						
+						$('#updateContent').empty().append('<option>Title</option>' +
+															'<option>Commentary</option>' +
+															'<option>Video Link </option>' +
+															'<option>Cover Image</option>');
+					});
+					
+					request.fail(function(x)
+					{
+						alert(x.responseText);
+						location.reload();
+						$('#updateContent').empty().append('<option>Title</option>' +
+															'<option>Commentary</option>' +
+															'<option>Video Link </option>' +
+															'<option>Cover Image</option>');
+					});
+				}
+				
+				$('#updateContent').change(function()
+				{
+					//alert("Yea");
+							
+					$('#change').remove();
+						
+					if($('#updateContent').val() == "Title")
+					{
+						$('#addHere').after("<section class = 'form-group' id = 'change'>" +
+							
+												"<label for = 'update'> Title </label>" +
+															
+												"<input type = 'text' class = 'form-control updateInput' name = 'update' required>" +
+															
+											"</section>");
+					}
+							
+					else if($('#updateContent').val() == "Commentary")
+					{
+						$('#addHere').after("<section class = 'form-group' id = 'change'>" +
+								
+												"<label for = 'update'> Commentary </label>" +
+														
+												"<input type = 'text' class = 'form-control updateInput' name = 'update'>" +
+															
+											"</section>");
+					}
+						
+					else if($('#updateContent').val() == "Video Link")
+					{
+						$('#addHere').after("<section class = 'form-group' id = 'change'>" +								
+															
+													"<label for = 'update'> Video Link </label>" +
+															
+													"<input type = 'text' class = 'form-control updateInput' name = 'update' required>" +
+															
+												"</section>");
+					}
+							
+					else if($('#updateContent').val() == "Cover Image")
+					{
+						$('#addHere').after("<section class = 'form-group' id = 'change'>" +
+								
+													"<label for = 'update'> Image </label>" +
+															
+													"<input type = 'file' class = 'form-control updateInput' name = 'update' required>" +
+														
+												"</section>");
+					}
+				});
+			});
+	</script>
+  </head>
+  <body>
+  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> </script>
+	
+		<nav class = "navbar navbar-default navbar-fixed-top navBlue">
+		
+				 <section class = "container-fluid" id = "shiftNav">
+				 
+				 	<section class = "navbar-header">
+						  
+						<button class = "navbar-toggle collapsed slimNav" data-toggle = "collapse" data-target = "#collapsedNav" aria-expanded = "false">
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+							<span class = "icon-bar"> </span>
+								   
+						</button>
+								   
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" id = "navImageContainer" class = "hidden-xs"> <img class = "navbar-brand img-circle" id = "brand1" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<a href = "http://freshminlifestyle-westcoast.rhcloud.com" style = "position: relative;width: 100px;" id = "navImageContainer" class = "hidden-md hidden-sm hidden-lg"> <img id = "brand2" class = "navbar-brand img-circle" src = "http://freshminlifestyle-westcoast.rhcloud.com/siteLogo" title = "Home"> </a>
+						
+						<div class = "input-group input-group-md hidden-md hidden-lg" id = "searchSm"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+							
+					</section>
+						  
+					<form class = "navbar-form navbar-right hidden-sm hidden-xs">
+
+						<button type = "button" class = "btn btn-primary btn-sm" id = "logIn" style = "position: relative; right: 15px; top: 20px"> Log In </button>
+						
+						<button type = "button" class = "btn btn-info btn-sm" id = "signUp" style = "position: relative; right: 15px; top: 20px"> Sign Up </button>
+											
+						<div class = "input-group input-group-md" id = "searchLg"> 
+							<span class = "input-group-addon" id = "searchButton"> <span class = "glyphicon glyphicon-search" title = "Search"> </span> </span> 
+							<input type = "input" id = "navSearch" class = "form-control" placeholder = "Freshmin.com" autocomplete = "off"> 
+						</div>	
+										
+					</form>   
+						 
+						  
+					<section class = "collapse navbar-collapse" id = "collapsedNav">
+						  
+						<ul class = "nav navbar-nav" id = "navbar-drop">
+								   
+							<li class = "dropdown links"> 
+									   	  
+								<a class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup= "true" aria-expanded = "false"> <h4> <strong> Xclusives </strong> <span class = "caret"> </span> </h4> </a>
+										   
+								<ul class = "dropdown-menu">
+										   	   
+									<li title "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/xclusiveVideos"> <h5> Videos </h5> </a> </li>
+											   
+									<li title = "Interviews"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/interviews"> <h5> Interviews </h5> </a> </li>	
+											   
+								</ul>
+										   
+							</li>
+								   
+							<li class = "links" title = "Videos"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/videos"> <h4> <strong> Videos </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Blogs"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogs"> <h4> <strong id = "blogLink"> Blogs </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "Shop"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> Shop </strong> </h4> </a> </li>
+									   
+							<li class = "links" title = "About"> <a href = "http://freshminlifestyle-westcoast.rhcloud.com/about"> <h4> <strong> About </strong> </h4> </a> </li>
+									  
+						</ul>
+						  
+					</section>
+				 
+				</section>
+		
+		</nav>
+	
+	<section class = "container-fluid" id = "updateContainer" style = "position: relative; margin-top: 90px;">
+	
+		<section class = "page-header">
+	
+			<h1> Updates </h1>
+		
+		</section>
+		
+		<form class = "form-inline" id = "updateForm" enctype = "multipart/form-data" autocomplete = "off">
+		
+			<section class = "form-group" id = "updateGroup">
+			
+				<label for = "type"> Content Type </label>
+				
+				<select class = "form-control updateInput" name = "type" id = "typeSelect" required>
+					
+					<option> Video </option>		
+					
+					<option> Xclusive </option>
+				
+				</select>
+			
+				<label for = "title"> Content Title </label>
+				<input type = "text" placeholder = "Enter Content Title" class = "form-control updateInput" name = "title" required>
+			
+				<label for = 'update'>Update</label>
+														
+				<select class = 'form-control updateInput' name = 'updateType' id = 'updateContent' required>
+														
+					<option>Title</option>
+															
+					<option>Commentary</option>
+															
+					<option id = "removeLink">Video Link</option>
+														
+				</select>
+				
+				<label for = "title"> Title </label>
+			
+				<input type = "text" class = "form-control" name = "update" required>
+				
+				<button type = "submit" class = "btn btn-primary updateInput"> Update </button>
+			
+			</section>
+			
+		</form>
+		
+	</section>
+	
+	<footer class = "container-fluid">
+			
+		<section class = "row">
+		
+				<section class = "col-md-4 col-sm-4 col-xs-4 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" id = "adminCol">
+				
+					<h3 id = "adminHeader"> Admin Privileges </h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggersAdmin" class = "admin"><p> Blogger Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogAdmin" class = "admin"><p> Blog Requests </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/videoAdmin" class = "admin"><p> Videos </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/originalAdmin" class = "admin"><p> Xclusives </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/newsAdmin" class = "admin"><p> Upload News</p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/hottest" class = "admin"><p> Hottest </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/deleteContent" class = "admin"><p> Deletion </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/updateContent" class = "admin"><p> Update </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/emailUsers" class = "admin"><p> Email </p></a>
+					
+				</section>
+			
+				<section class = "col-md-12 col-sm-12 col-xs-12" id = "userCol">
+				
+					<h3 id = "userHeader"> User Requests</h3>
+				
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/bloggerRequest" class = "user"><p> Blogger Request </p></a>
+					<a href = "http://freshminlifestyle-westcoast.rhcloud.com/blogUpload" class = "user"><p> Blog Requests </p></a>
+				
+				</section>
+		
+		</section>
+		
+		<section class = "container-fluid" id = "copyrightContainer">
+			
+			<img src = "http://freshminlifestyle-westcoast.rhcloud.com/copyrightImage" class = "copyright img-responsive"> <h5 class = "copyrightTitle"> 2016 Freshmin | Smart Designs </h5>
+			
+		</section>
+
+	</footer>
+	
+  </body>
+</html>

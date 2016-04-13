@@ -1,0 +1,19 @@
+{
+	"name": "fav_site",
+	"version": "5.10.0",
+	"main": "main.js",
+	"scripts": 
+	{
+		"start": "node main.js"
+	},
+	"author": "Cameron L. Walker",
+	"dependencies": 
+	{
+		"express": "4.13.3",
+		"serve-favicon": "2.3.0",
+		"mongoose": "4.3.7",
+		"nodemailer": "1.10.0",
+		"nodemailer-smtp-transport": "*",
+		"multer": "*"
+	}
+}
